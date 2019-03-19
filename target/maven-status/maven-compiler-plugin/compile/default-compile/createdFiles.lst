@@ -1,0 +1,6 @@
+com\vebinar\controller\UserController.class
+com\vebinar\App.class
+com\vebinar\Dao\UserDao.class
+com\vebinar\service\TestBean.class
+com\vebinar\config\SpringConfig.class
+com\vebinar\service\UserService.class
