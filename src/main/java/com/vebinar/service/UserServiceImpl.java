@@ -13,7 +13,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     public UserDao userDao;
 
-    public void save(User user) {
+    public void save(User user) throws Exception {
+        if (user.getName().length() < 2) {
+            throw new Exception();
+        }
         userDao.save(user);
     }
 

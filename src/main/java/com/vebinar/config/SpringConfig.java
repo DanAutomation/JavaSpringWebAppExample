@@ -8,11 +8,13 @@ import com.vebinar.service.TestBean;
 import com.vebinar.service.UserService;
 import com.vebinar.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
+@ComponentScan(basePackages = {"com.vebinar.service", "com.vebinar.Dao"})
 public class SpringConfig {
 
     @Bean
@@ -35,13 +37,13 @@ public class SpringConfig {
         return dataSource;
     }
 
-    @Bean
-    public UserDao getUserDao(){
-        return new UserDaoImpl(getJdbcTemplate());
-    }
+//    @Bean
+//    public UserDao getUserDao(){
+//        return new UserDaoImpl(getJdbcTemplate());
+//    }
 
-    @Bean
-    public UserService getUserService() {
-        return new UserServiceImpl();
-    }
+//    @Bean
+//    public UserService getUserService() {
+//        return new UserServiceImpl();
+//    }
 }

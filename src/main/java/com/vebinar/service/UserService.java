@@ -6,7 +6,7 @@ import com.vebinar.entity.User;
 
 public interface UserService {
 
-    void save(User user);
+    void save(User user) throws Exception;
 
     User getById(int id);
 
