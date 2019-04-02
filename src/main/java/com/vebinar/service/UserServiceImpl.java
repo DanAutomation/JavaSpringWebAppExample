@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    public UserDao userDao;
+    public UserDao userDao;  // injecting userDao, which described in SpringConfig from basePackages
 
     public void save(User user) throws Exception {
         if (user.getName().length() < 2) {

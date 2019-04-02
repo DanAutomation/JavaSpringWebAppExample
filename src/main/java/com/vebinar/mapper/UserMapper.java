@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.RowMapper;
 public class UserMapper implements RowMapper<User> {
 
 //    @Override
-    public User mapRow(ResultSet resultSet, int i) throws SQLException {
+    public User mapRow(ResultSet resultSet, int i) throws SQLException {  // manually mapping our user from data base
         User user = new User();
         user.setId(resultSet.getInt("id"));
         user.setName(resultSet.getString("name"));

@@ -4,10 +4,6 @@ public class TestBean {
 
     private String name;
 
-    public TestBean() {
-
-    }
-
     public TestBean(String name) {
         this.name = name;
     }
@@ -19,4 +15,5 @@ public class TestBean {
     public void setName(String name) {
         this.name = name;
     }
+
 }

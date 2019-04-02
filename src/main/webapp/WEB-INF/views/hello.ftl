@@ -6,6 +6,6 @@
 </head>
 <body>
   <h1>My first template!</h1>
-  <a href="/users">go to Users</a>
+  <a href="/users">go to Users</a> <#-- redirect to userList.ftl -->
 </body>
 </html>

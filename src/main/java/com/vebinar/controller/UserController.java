@@ -28,9 +28,9 @@ public class UserController {
         return "hello";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/users")  // after request in url by "users" - redirect to file usersList.ftl from views
     public String getAllUsers(Model model){
-        model.addAttribute("users", userService.findAll());  // will return all users from DB
+        model.addAttribute("users", userService.findAll());  // return all users, when requesting "users"
         return "usersList";
     }
 

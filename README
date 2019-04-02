@@ -6,3 +6,10 @@ http://localhost:9999/hello
 
 
 https://github.com/kliakhin/vebinar101217
+
+Schema:
+1. create SpringConfig with annotation @Configuration, here create method with annotation @Bean and retrive
+2. create TestBean in <service> (lowest tier) and describe properties (constructor, getter, setter) for bean
+3. in App (void main) create:
+- AnnotationConfigApplicationContext with class name - SpringConfig.class inside
+- create vat type of

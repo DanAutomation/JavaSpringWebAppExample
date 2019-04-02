@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.vebinar.entity.User;
 
-public interface UserService {
+public interface UserService {  // describe all logic from controller and dao
 
     void save(User user) throws Exception;
 

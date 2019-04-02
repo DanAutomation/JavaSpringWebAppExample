@@ -14,7 +14,7 @@
         <th>Age</th>
     </tr>
 
-    <#list users as user>
+    <#list users as user>  <#-- users attribute, which come from model -->
         <tr>
             <td><a href="/user/${user.id}">${user.id}</a></td>
             <td>${user.name}</td>

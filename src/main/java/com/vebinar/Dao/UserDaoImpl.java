@@ -11,9 +11,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserDaoImpl implements UserDao {
 
-    public final JdbcTemplate jdbcTemplate;
+    public JdbcTemplate jdbcTemplate;
 
-    @Autowired
+    @Autowired   // connecting previous created JdbcTemplate in SpringConfig, will created when our app will start
     public UserDaoImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }

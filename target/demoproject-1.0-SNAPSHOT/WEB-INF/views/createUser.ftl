@@ -12,6 +12,7 @@
     <input title="Email" type="text" name="email">
     <p>Age</p>
     <input title="Age" type="text" name="age"><br>
+    <br/>
     <input type="submit" value="ok">
 </form>
 </body>
